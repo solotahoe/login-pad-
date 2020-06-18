@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIN</title>
+    <link href="pin.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <h1>pin log in with html, css and javascript</h1>
+    <div class="pin-login" id="mainPinLogin">
+      <input type="password" readonly class="pin-login__text">
+      <div class="pin-login__namepad">
+        <!--<div class="pin-login__key"> 0</div>
+        <div class="pin-login__key material-icons">done</div>-->
+      </div>  
+
+</div>
+
+<script src="pin.js"></script>
+<script>
+   new pinLogin({
+    el:document.getElementById("mainPinLogin"),
+    loginEndpoint:"login.php",
+    redirecTo:"dashboard.html",
+    maxNumbers:4
+
+
+
+   }); 
+
+
+
+
+
+</script>
+</body>
+</html>
